@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<!-- Light Mode Theme -->
+	<!-- Light Mode Theme (kept light for status bar/icon contrast) -->
 	<color name="colorPrimary">#FFFFFF</color>
-	<color name="colorPrimaryDark">#F0F0F0</color>
-	<color name="colorPrimaryDarker">#EAEAEA</color>
-	<color name="colorAccent">#F4710B</color>
-	<color name="colorAccentDark">#C75200</color>
-	<color name="textColorPrimary">#1D1D1F</color>
-	<color name="textColorSecondary">#555555</color>
-	<color name="iconTint">#F4710B</color>
+	<color name="colorPrimaryDark">#F6F7FB</color>
+	<color name="colorPrimaryDarker">#EDEFF5</color>
+	<!-- Violet/Pink accent to match 21-day page -->
+	<color name="colorAccent">#8B5CF6</color>
+	<color name="colorAccentDark">#7C3AED</color>
+	<color name="textColorPrimary">#0F172A</color>
+	<color name="textColorSecondary">#475569</color>
+	<color name="iconTint">#8B5CF6</color>
 	<color name="white">#FFFFFF</color>
 	<color name="black">#000000</color>
 </resources>

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Dark Mode Theme -->
-    <color name="colorPrimary">#105203</color>
-    <color name="colorPrimaryDark">#063401</color>
-    <color name="colorPrimaryDarker">#141a13</color>
-    <color name="colorAccent">#4AAB33</color>
-    <color name="colorAccentDark">#399623</color>
-    <color name="textColorPrimary">#E4E4E6</color>
-    <color name="textColorSecondary">#F1F1F1</color>
-    <color name="iconTint">#449a2f</color>
+    <!-- Dark Mode Theme matching 21-day site -->
+    <color name="colorPrimary">#0B1220</color>
+    <color name="colorPrimaryDark">#070D19</color>
+    <color name="colorPrimaryDarker">#060A14</color>
+    <!-- Accent magenta/pink tones used in the headline gradient -->
+    <color name="colorAccent">#EC4899</color>
+    <color name="colorAccentDark">#DB2777</color>
+    <color name="textColorPrimary">#E5E7EB</color>
+    <color name="textColorSecondary">#CBD5E1</color>
+    <color name="iconTint">#EC4899</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 </resources>
