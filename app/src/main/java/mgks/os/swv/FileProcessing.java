@@ -33,6 +33,8 @@ import android.webkit.WebView;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.core.content.FileProvider;
 
+import in.mobtown.one.R;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;

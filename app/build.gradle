@@ -33,12 +33,34 @@ def getSwvProperties() {
 }
 def swvProps = getSwvProperties()
 
+def getKeystoreProperties() {
+	def properties = new Properties()
+	def propertiesFile = file('../keystore.properties')
+	if (propertiesFile.exists()) {
+		properties.load(propertiesFile.newDataInputStream())
+	} else {
+		// Fallback or error if the file is missing
+		throw new GradleException("keystore.properties file not found in project root")
+	}
+	return properties
+}
+def keystoreProps = getKeystoreProperties()
+
 android {
-	namespace swvProps.getProperty('build.application.id', 'mgks.os.swv')
+	namespace swvProps.getProperty('build.application.id', 'in.mobtown.one')
 	compileSdk swvProps.getProperty('build.sdk.compile', '36').toInteger()
 
+	signingConfigs {
+		release {
+			storeFile file(keystoreProps['storeFile'])
+			storePassword keystoreProps['storePassword']
+			keyAlias keystoreProps['keyAlias']
+			keyPassword keystoreProps['keyPassword']
+		}
+	}
+
 	defaultConfig {
-		applicationId swvProps.getProperty('build.application.id', 'mgks.os.swv')
+		applicationId swvProps.getProperty('build.application.id', 'in.mobtown.one')
 		minSdk swvProps.getProperty('build.sdk.min', '24').toInteger()
 		targetSdk swvProps.getProperty('build.sdk.compile', '36').toInteger()
 		versionCode swvProps.getProperty('build.version.code', '1').toInteger()
@@ -48,6 +70,7 @@ android {
 
 	buildTypes {
 		release {
+			signingConfig signingConfigs.release
 			minifyEnabled false // consider enabling for production
 			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 		}

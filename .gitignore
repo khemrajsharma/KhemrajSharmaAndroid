@@ -19,6 +19,12 @@ local.properties
 # google config files
 google-services.json
 
+# Keystore files
+*.keystore
+*.jks
+*.p12
+keystore.properties
+
 # Windows thumbnail db
 Thumbs.db
 
@@ -54,3 +60,4 @@ ImageCompressPlugin.java
 CSSInjectorPlugin.java
 PaymentGatewayPlugin.java
 /app/src/main/java/mgks/os/swv/plugins
+/keystore

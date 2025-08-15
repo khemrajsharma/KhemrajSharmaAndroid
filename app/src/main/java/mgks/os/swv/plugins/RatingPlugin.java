@@ -40,8 +40,9 @@ import java.util.Map;
 import mgks.os.swv.Functions;
 import mgks.os.swv.PluginInterface;
 import mgks.os.swv.PluginManager;
-import mgks.os.swv.R;
 import mgks.os.swv.SWVContext;
+
+import in.mobtown.one.R;
 
 public class RatingPlugin implements PluginInterface {
     private static final String TAG = "RatingPlugin";

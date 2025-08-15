@@ -32,6 +32,8 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Consumer;
 
+import in.mobtown.one.R;
+
 /**
  * Playground is the central hub for configuring and testing plugins in Smart WebView.
  * It is designed to be fail-safe and does not have static dependencies on any specific plugin.

@@ -42,6 +42,8 @@ import java.util.Properties;
 
 import dalvik.system.DexFile;
 
+import in.mobtown.one.R;
+
 /**
  * Configuration and utility class for Smart WebView.
  * This class now loads its configuration from 'assets/swv.properties'
